@@ -1,0 +1,52 @@
+Thông tư Hướng dẫn việc quản lý, khai thác Phần mềm Quản lý đăng ký tài sản nhà nước
+
+Căn cứ <L rel="CC"> Luật Quản lý , sử dụng tài sản nhà nước năm 2008 </L> ;
+Căn cứ <NĐ rel="CC"> Nghị định số 52/2009/NĐ-CP ngày 03/6/2009 </NĐ> của Chính phủ quy định chi tiết và hướng dẫn thi hành một số điều của <L rel="none"> Luật Quản lý , sử dụng tài sản nhà nước </L> ;
+Căn cứ <NĐ rel="CC"> Nghị định số 64/2007/NĐ-CP ngày 10/4/2007 </NĐ> của Chính phủ về ứng dụng công nghệ thông tin trong hoạt động của cơ quan nhà nước ;
+Căn cứ <NĐ rel="CC"> Nghị định số 26/2007/NĐ-CP ngày 15/02/2007 </NĐ> của Chính phủ quy định chi tiết thi hành <L rel="none"> Luật giao dịch điện tử </L> về chữ ký số và dịch vụ chứng thực chữ ký số ;
+Căn cứ <NĐ rel="CC"> Nghị định số 118/2008/NĐ-CP ngày 27/11/2008 </NĐ> của Chính phủ quy định chức năng , nhiệm vụ , quyền hạn và cơ cấu tổ chức của Bộ Tài chính ;
+Điều 1 .  Phạm vi điều chỉnh 
+
+Thông tư này quy định về việc quản lý , khai thác Phần mềm Quản lý đăng ký tài sản nhà nước ( sau đây gọi tắt là Phần mềm ) . 
+
+Điều 2 .  Đối tượng áp dụng 
+
+1 . Đối tượng áp dụng Thông tư này bao gồm : 
+
+a ) Bộ Tài chính ; 
+
+b ) Cơ quan tài chính hoặc cơ quan khác được giao nhiệm vụ tiếp nhận và quản lý báo cáo kê khai tài sản nhà nước ( gọi chung là cơ quan tài chính ) , cơ quan quản lý công nghệ thông tin hoặc cơ quan có chức năng về quản lý công nghệ thông tin ( gọi chung là cơ quan quản lý công nghệ thông tin ) của các Bộ , cơ quan ngang Bộ , cơ quan thuộc Chính phủ , cơ quan trung ương của tổ chức chính trị , tổ chức chính trị-xã hội , tổ chức chính trị xã hội-nghề nghiệp , tổ chức xã hội , tổ chức xã hội-nghề nghiệp , cơ quan khác ở Trung ương ( gọi chung là Bộ , cơ quan trung ương ) ;  Sở Tài chính các tỉnh , thành phố trực thuộc Trung ương ; 
+
+c ) Cơ quan , tổ chức , đơn vị khác liên quan đến việc quản lý Phần mềm , kê khai , đăng nhập , chuẩn hóa dữ liệu trong Phần mềm và khai thác , sử dụng thông tin trong Cơ sở dữ liệu quốc gia về tài sản nhà nước . 
+
+2 . Thông tư này không áp dụng đối với đơn vị vũ trang nhân dân , cơ quan đại diện Việt Nam ở nước ngoài . 
+
+Ðiều 3 .  Giải thích từ ngữ 
+
+1 . Phần mềm Quản lý đăng ký tài sản nhà nước là ứng dụng dịch vụ tài chính công trực tuyến hỗ trợ Bộ Tài chính , các Bộ , cơ quan trung ương , các tỉnh , thành phố trực thuộc Trung ương thực hiện : 
+
+a ) Tin học hóa quá trình báo cáo kê khai tài sản nhà nước tại các cơ quan , tổ chức , đơn vị theo quy định của pháp luật về quản lý , sử dụng tài sản nhà nước ; 
+
+b ) Theo dõi tình hình biến động ( tăng , giảm , thay đổi thông tin ) của các loại tài sản nhà nước phải báo cáo kê khai ; 
+
+c ) In báo cáo kê khai tài sản nhà nước , các báo cáo tổng hợp tình hình kê khai tài sản nhà nước ; 
+
+d ) Tổng hợp tình hình quản lý , sử dụng tài sản nhà nước của cả nước , của từng Bộ , cơ quan trung ương , tỉnh , thành phố trực thuộc Trung ương , từng cơ quan , tổ chức , đơn vị để hình thành Cơ sở dữ liệu quốc gia về tài sản nhà nước theo quy định của pháp luật về quản lý , sử dụng tài sản nhà nước . 
+
+2 . Chứng thư số áp dụng cho Phần mềm là một dạng chứng thư điện tử do Ban Cơ yếu Chính phủ cung cấp ( dịch vụ chứng thực chữ ký số ) để đảm bảo tính bảo mật của Phần mềm . 
+
+3 . Thiết bị lưu khóa bí mật ( eToken ) là thiết bị điện tử dùng để lưu trữ chứng thư số và khóa bí mật của người sử dụng . 
+
+4 . Cán bộ quản trị Phần mềm là cán bộ , công chức , viên chức của Bộ Tài chính , cơ quan tài chính của các Bộ , cơ quan trung ương , Sở Tài chính các tỉnh , thành phố trực thuộc Trung ương được Thủ trưởng đơn vị giao nhiệm vụ quản trị , vận hành Phần mềm .  Mỗi cán bộ quản trị Phần mềm được cấp một chứng thư số . 
+
+5 . Người sử dụng Phần mềm ( gọi tắt là Người sử dụng ) là cán bộ , công chức , viên chức của các cơ quan , tổ chức , đơn vị tham gia sử dụng Phần mềm , được đăng ký và có quyền truy cập Phần mềm theo một vai trò cụ thể để thực hiện các nhiệm vụ được Thủ trưởng các đơn vị quy định tại khoản 1 Điều 2 Thông tư này giao .  Người sử dụng được cấp một tài khoản ( bao gồm : tên truy cập và mật khẩu ) do Quản trị hệ thống tạo lập để truy cập Phần mềm . 
+
+Điều 4 .  Điều kiện vận hành Phần mềm 
+
+1 . Máy vi tính của Người sử dụng tại các Bộ , cơ quan trung ương phải được kết nối Internet , tại Sở Tài chính các tỉnh , thành phố trực thuộc Trung ương phải được kết nối với hạ tầng truyền thông của Bộ Tài chính hoặc kết nối Internet . 
+
+2 . Máy vi tính phải được cài đặt hệ điều hành Windows , chương trình phần mềm diệt virus , được cập nhật thường xuyên các bản nhận dạng mẫu virus mới , các bản vá lỗi an ninh cho hệ điều hành . 
+
+3 . Thông tin nhập vào Phần mềm phải sử dụng font chữ Unicode TCVN 6909 : 2001 và gõ dấu tiếng Việt .  Các văn bản dùng hệ font chữ khác với Unicode , phải được chuyển đổi sang định dạng font chữ Unicode TCVN 6909 : 2001 trước khi tải vào Phần mềm . 
+
+4 . Đối với người sử dụng được cấp thiết bị chứng thư số , ngoài các điều kiện quy định tại các khoản 1 , 2 và 3 Điều này , máy vi tính của người sử dụng phải được cài đặt phần mềm quản lý thiết bị lưu khóa bí mật ( eToken ) do Ban Cơ yếu Chính phủ cấp kèm theo thiết bị và kết nối hạ tầng truyền thông của Bộ Tài chính hoặc kết nối Internet .  Người sử dụng được cấp etoken và mật khẩu etoken để bảo mật . 

@@ -1,0 +1,485 @@
+Thông tư Sửa đổi, bổ sung một số điều của Thông tư số 30/2009/TT-BTNMT ngày 31 tháng 12 năm 2009 của Bộ Tài nguyên và môi trường quy định về quy trình và định mức kinh tế - kỹ thuật xây dựng cơ sở dữ liệu tài nguyên và môi trường
+
+Căn cứ <NĐ rel="CC"> Nghị định số 25/2008/NĐ-CP ngày 04 tháng 3 năm 2008 </NĐ> của Chính phủ quy định chức năng , nhiệm vụ , quyền hạn và cơ cấu tổ chức của Bộ Tài nguyên và Môi trường ;
+Căn cứ <NĐ rel="CC"> Nghị định số 102/2008/NĐ-CP ngày 15 tháng 9 năm 2008 </NĐ> của Chính phủ về việc thu thập , quản lý , khai thác và sử dụng dữ liệu về tài nguyền và môi trường ;
+Căn cứ <QĐ rel="CC"> Quyết định số 179/2004/QĐ-TTg ngày 06 tháng 10 năm 2004 </QĐ> của Thủ tướng Chính phủ về việc phê duyệt Chiến lược ứng dụng và phát triển công nghệ thông tin tài nguyên và môi trường đến năm 2015 và định hướng đến năm 2020 ;
+Điều 1 . Sửa đổi , bổ sung các điểm sau của <TT rel="DSD"> Thông tư số 30/2009/TT-BTNMT ngày 31 tháng 12 năm 2009 </TT> của Bộ Tài nguyên và Môi trường Quy định về Quy trình và Định mức kinh tế-kỹ thuật xây dựng cơ sở dữ liệu tài nguyên và môi trường :
+1 . Sửa đổi điểm 5.1 ( Dụng cụ ) khoản 5 ( Định mức vật tư , thiết bị ) mục IV ( Chuẩn hóa và chuyển đổi dữ liệu ) chương II ( Định mức xây dựng cơ sở dữ liệu tài nguyền và môi trường ) như sau : 
+
+Ca/01 đối tượng quản lý 
+
+STT 
+
+Dụng cụ 
+
+ĐVT 
+
+Thời hạn ( tháng ) 
+
+Chuyển đổi dữ liệu không gian về hệ tọa độ 
+
+Chuẩn hóa dữ liệu không gian theo thiết kế mô hình dữ liệu 
+
+Chuẩn hóa phông chữ 
+
+Chuẩn hóa dữ liệu phi không gian theo thiết kế mô hình dữ liệu 
+
+Chuyển đổi dữ liệu sau khi được chuẩn hóa vào mô hình dữ liệu 
+
+1 
+
+Hộp đựng tài liệu 
+
+Cái 
+
+2 
+
+6,80 
+
+280,00 
+
+64,00 
+
+32,00 
+
+,00 
+
+2 
+
+Túi đựng tài liệu 
+
+80,00 
+
+,00 
+
+3 
+
+Dập ghim 
+
+4 
+
+,20 
+
+53,00 
+
+6,00 
+
+,00 
+
+4 
+
+Ổ ghi đĩa DVD 
+
+60 
+
+,60 
+
+6,50 
+
+6,50 
+
+,00 
+
+,20 
+
+5 
+
+Ghế 
+
+96 
+
+,00 
+
+6 
+
+Bàn làm việc 
+
+,00 
+
+7 
+
+Quạt trần 100W 
+
+,10 
+
+5,00 
+
+8,00 
+
+,00 
+
+,50 
+
+8 
+
+Đèn neon 40W 
+
+Bộ 
+
+,20 
+
+0,00 
+
+6,00 
+
+,00 
+
+9 
+
+Tủ đựng tài liệu 
+
+0 
+
+Giá để tài liệu 
+
+Điện 
+
+kw 
+
+,18 
+
+,9 
+
+,10 
+
+,05 
+
+,7 
+
+. Sửa đổi điểm 3.1 ( Dụng cụ ) khoản 3 ( Định mức vật tư , thiết bị ) mục V ( Nhập dữ liệu ) chương II ( Định mức xây dựng cơ sở dữ liệu tài nguyên và môi trường ) như sau : 
+
+Dữ liệu phi không gian 
+
+Dữ liệu không gian 
+
+Có cấu trúc 
+
+Không có cấu trúc 
+
+Yếu tố dạng điểm 
+
+Yếu tố dạng vùng 
+
+Yếu tố dạng đường 
+
+0.0130 
+
+0.2000 
+
+0.00 
+
+.00 
+
+0.00 
+
+.00 
+
+.00 
+
+0.0016 
+
+0.0250 
+
+.50 
+
+.00 
+
+0.0032 
+
+0.0500 
+
+.00 
+
+.00 
+
+0 
+
+0.0025 
+
+0.0820 
+
+.78 
+
+.02 
+
+. Sửa đổi điểm .  2 ( Thiết bị ) khoản ( Định mức vật tư , thiết bị ) mục V ( Nhập dữ liệu ) chương II ( Định mức xây dựng cơ sở dữ liệu tài nguyên và môi trường ) như sau : 
+
+Thiết bị 
+
+CS ( kW ) 
+
+Máy tính để bàn 
+
+0,4 
+
+0.0040 
+
+0.0400 
+
+Máy in laser 
+
+0,6 
+
+0.0007 
+
+0.0060 
+
+.05 
+
+0.84 
+
+Điều hòa nhiệt độ 
+
+, 
+
+0.0022 
+
+0.0090 
+
+.5 
+
+.68 
+
+Máy photocopy 
+
+,5 
+
+0.0005 
+
+0.0050 
+
+0.75 
+
+0.60 
+
+0.0180 
+
+0.4000 
+
+7.05 
+
+0.64 
+
+. Sửa đổi điểm 3.3 ( Vật liệu ) khoản 3 ( Định mức vật tư , thiết bị ) mục V ( Nhập dữ liệu ) chương II ( Định mức xây dựng cơ sở dữ liệu tài nguyên và môi trường ) như sau : 
+
+Vật liệu 
+
+Giấy A4 
+
+Gram 
+
+0.00003 
+
+0.00200 
+
+Mực in laser 
+
+Hộp 
+
+0.00001 
+
+0.00010 
+
+0.0010 
+
+Mực máy photocopy 
+
+0.00020 
+
+0.0001 
+
+0.0009 
+
+Bút bi 
+
+0.0200 
+
+0.5000 
+
+ghim dập 
+
+Giấy ghi chú 
+
+Tập 
+
+0.0002 
+
+0.0030 
+
+0.0020 
+
+Cặp để tài liệu 
+
+0.0003 
+
+. Sửa đổi điểm .  1 ( Dụng cụ ) khoản ( Định mức vật tư , thiết bị ) mục II ( Phân tích nội dung dữ liệu ) chương III ( Định mức xây dựng phần mềm hỗ trợ việc xây dựng cơ sở dữ liệu tài nguyên và môi trường ) như sau : 
+
+Ca/01 đối tượng quản lý 
+
+Dụng cụ 
+
+Thời hạn ( tháng ) 
+
+Xác định đối tượng quản lý 
+
+Xác định thông tin mô tả cho từng đối tượng quản lý 
+
+Xác định các ràng buộc của đối tượng quản lý 
+
+đựng tài liệu 
+
+0,00 
+
+,00 
+
+Túi đựng tài liệu 
+
+0,00 
+
+Dập ghim 
+
+,00 
+
+,00 
+
+Ổ ghi đĩa DVD 
+
+0 
+
+,00 
+
+,00 
+
+Ghế 
+
+,00 
+
+Bàn làm việc 
+
+Quạt trần 100W 
+
+,50 
+
+,00 
+
+8 
+
+Đèn neon 40W 
+
+,00 
+
+,00 
+
+9 
+
+Tủ đựng tài liệu 
+
+0 
+
+Giá để tài liệu 
+
+,78 
+
+,07 
+
+. Sửa đổi điểm 4.5 ( Thiết kế giao diện phần mềm ) khoản 4 ( Định mức lao động công nghệ ) mục III ( Thiết kế hệ thống ) chương III ( Định mức xây dựng phần mềm hỗ trợ việc xây dựng cơ sở dữ liệu tài nguyên và môi trường ) như sau : 
+
+Công/01 trường hợp sử dụng 
+
+Danh mục công việc 
+
+Công 
+
+Thiết kế giao diện 
+
+. Sửa đổi điểm 5.1 ( Dụng cụ ) khoản 5 ( Định mức vật tư , thiết bị ) mục V ( Kiểm thử ) chương III ( Định mức xây dựng phần mềm hỗ trợ việc xây dựng cơ sở dữ liệu tài nguyên và môi trường ) như sau : 
+
+Ca/01 trường hợp sử dụng 
+
+Kiểm tra mã nguồn theo tiêu chuẩn 
+
+Kiểm tra mức thành phần 
+
+Kiểm tra mức hệ thống 
+
+,60 
+
+,20 
+
+0,30 
+
+0,60 
+
+0 
+
+0,15 
+
+,20 
+
+0,20 
+
+0,40 
+
+0,80 
+
+0 
+
+. Sửa đổi điểm 5.1 ( Dụng cụ ) khoản 5 ( Định mức vật tư , thiết bị ) mục VI ( Triển khai ) chương III ( Định mức xây dựng phần mềm hỗ trợ việc xây dựng cơ sở dữ liệu tài nguyên và môi trường ) như sau : 
+
+Xây dựng tài liệu hướng dẫn sử dụng 
+
+Đóng gói phần mềm 
+
+Đào tạo 
+
+,60 
+
+,00 
+
+0 
+
+,00 
+
+,00 
+
+0 
+
+,5 
+
+Điều 2 .  Thông tư này có hiệu lực thi hành kể từ ngày 11 tháng 5 năm 2011 
+
+. Sửa đổi điểm 5.1 ( Dụng cụ ) khoản 5 ( Định mức vật tư , thiết bị ) mục VI ( Triển khai ) chương III ( Định mức xây dựng phần mềm hỗ trợ việc xây dựng cơ sở dữ liệu tài nguyên và môi trường ) như sau : 
+
+,60 
+
+,00 
+
+0 
+
+,00 
+
+,00 
+
+0 
+
+,5 
+
+Điều 3 .  Bộ trưởng , Thủ trưởng các cơ quan ngang Bộ , cơ quan thuộc Chính phủ , Chủ tịch Ủy ban nhân dân các tỉnh , thành phố trực thuộc Trung ương , Cục trưởng Cục Công nghệ thông tin , Thủ trưởng các đơn vị thuộc Bộ Tài nguyên và Môi trường , Giám đốc Sở Tài nguyên và Môi trường các tỉnh , thành phố trực thuộc Trung ương và tổ chức , cá nhân có liên quan chịu trách nhiệm thi hành Thông tư này . 
+
+. Sửa đổi điểm 5.1 ( Dụng cụ ) khoản 5 ( Định mức vật tư , thiết bị ) mục VI ( Triển khai ) chương III ( Định mức xây dựng phần mềm hỗ trợ việc xây dựng cơ sở dữ liệu tài nguyên và môi trường ) như sau : 
+
+,60 
+
+,00 
+
+0 
+
+,00 
+
+,00 
+
+0 
+
+,5 
+
+Trong quá trình thực hiện nếu có vướng mắc đề nghị các cơ quan , đơn vị phản ánh về Bộ Tài nguyên và Môi trường để nghiên cứu , sửa đổi , bổ sung cho phù hợp ./. 

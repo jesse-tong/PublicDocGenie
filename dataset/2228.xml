@@ -1,0 +1,192 @@
+Thông tư Quy định về mua, bán công suất phản kháng
+
+Căn cứ <NĐ rel="CC"> Nghị định số 95/2012/NĐ-CP ngày 12 tháng 11 năm 2012 </NĐ> của Chính phủ quy định chức năng , nhiệm vụ , quyền hạn và cơ cấu tổ chức của Bộ Công Thương ;
+Căn cứ <L rel="CC"> Luật Điện lực ngày 03 tháng 12 năm 2004 </L> và <L rel="CC"> Luật sửa đổi , bổ sung một số điều của <L rel="none"> Luật Điện lực </L> ngày 20 tháng 11 năm 2012 </L> ;
+Căn cứ <NĐ rel="CC"> Nghị định số 137/2013/NĐ-CP ngày 21 tháng 10 năm 2013 </NĐ> của Chính phủ quy định chi tiết thi hành một số điều của <L rel="none"> Luật Điện lực </L> và <L rel="none"> Luật sửa đổi , bổ sung một số điều của <L rel="none"> Luật Điện lực </L> </L> ;
+Điều 1 .  Phạm vi điều chỉnh và đối tượng áp dụng 
+
+1 . Thông tư này quy định việc thực hiện mua , bán công suất phản kháng theo quy định tại khoản 3 , khoản 4 Điều 15 <NĐ rel="DaC"> Nghị định số 137/2013/NĐ-CP </NĐ> ngày 21 tháng 10 năm 2013 của Chính phủ quy định chi tiết thi hành một số điều của <L rel="none"> Luật Điện lực </L> và <L rel="none"> Luật sửa đổi , bổ sung một số điều của <L rel="none"> Luật Điện lực </L> </L> ( sau đây viết tắt là <NĐ rel="DaC"> Nghị định số 137/2013/NĐ-CP </NĐ> ) .
+2 . Thông tư này áp dụng cho các tổ chức , cá nhân mua bán điện từ hệ thống điện quốc gia và các tổ chức , cá nhân có liên quan . 
+
+Điều 2 .  Giải thích từ ngữ 
+
+1 . Bên mua điện là tổ chức , cá nhân có ký hợp đồng mua điện với bên bán điện để sản xuất , kinh doanh , dịch vụ hoặc bán lại cho tổ chức , cá nhân khác . 
+
+2 . Bên bán điện là các đơn vị bán buôn và bán lẻ điện có giấy phép hoạt động điện lực trong lĩnh vực bán buôn và bán lẻ điện . 
+
+Điều 3 .  Hướng dẫn thực hiện mua , bán công suất phản kháng 
+
+1 . Bên mua điện có trạm biến áp riêng hoặc không có trạm biến áp riêng , nhưng có công suất sử dụng cực đại đăng ký tại hợp đồng mua bán điện từ 40 kw trở lên và có hệ số công suất cosφ < 0,9 phải mua công suất phản kháng .  Phương pháp xác định hệ số công suất cosφ được quy định tại khoản 2 Điều này . 
+
+Trường hợp bên mua điện có công suất sử dụng cực đại đăng ký tại hợp đồng mua bán điện dưới 40 kw nhưng có công suất sử dụng điện thực tế cực đại từ 40 kw trở lên trong 3 chu kỳ ghi chỉ số công tơ liên tiếp thì bên mua điện thuộc đối tượng phải mua công suất phản kháng kể từ chu kỳ ghi chỉ số kế tiếp của 3 chu kỳ ghi chỉ số trên . Bên mua điện có trách nhiệm thỏa thuận lại hợp đồng mua bán điện với bên bán điện để thực hiện theo quy định tại khoản 3 Điều 15 <NĐ rel="DaC"> Nghị định số 137/2013/NĐ-CP </NĐ> .
+2 . Hệ số công suất cosφ dùng để xác định việc mua công suất phản kháng của bên mua điện được tính trên cơ sở số liệu đo đếm được tại công tơ đo đếm điện năng trong một chu kỳ ghi chỉ số công tơ theo công thức sau : 
+
+Trong đó : 
+
+Ap : Điện năng tác dụng trong chu kỳ ghi chỉ số công tơ ( kWh ) ; 
+
+Aq : Điện năng phản kháng nhận về trong chu kỳ ghi chỉ số công tơ là lượng công suất phản kháng tiêu thụ bởi các thiết bị điện trong khoảng thời gian giữa hai lần ghi chỉ số công tơ ( kVArh ) . 
+
+3 . Trường hợp bên mua điện ký một Hợp đồng cho nhiều công tơ đo đếm điện tại một địa điểm được cấp chung cùng một đường dây trung thế hoặc cao thế thì điện năng tác dụng là tổng sản lượng điện năng tác dụng của các công tơ và điện năng phản kháng là tổng sản lượng điện năng phản kháng của các công tơ . 
+
+4 . Trường hợp bên mua điện có sử dụng điện cho các mục đích khác chung với mục đích sản xuất , kinh doanh , dịch vụ thì việc xác định hệ số công suất cosφ như sau : 
+
+a ) Khi có công tơ đo đếm riêng cho phần điện năng sử dụng để sản xuất , kinh doanh , dịch vụ thì chỉ áp dụng mua công suất phản kháng đối với phần điện năng sử dụng cho mục đích này . 
+
+b ) Khi không có công tơ đo đếm riêng cho phần điện năng sử dụng để sản xuất , kinh doanh , dịch vụ mà chỉ có công tơ đo đếm điện năng chung , nếu hệ số công suất cosφ < 0,9 thì bên mua điện vẫn phải mua công suất phản kháng cho cả phần điện năng chung đó . 
+
+5 . Tiền mua công suất phản kháng là số tiền bên mua điện phải trả cho bên bán điện để bù đắp các khoản chi phí phát sinh thêm do bên mua điện sử dụng quá lượng công suất phản kháng quy định được tính theo công thức sau : 
+
+Tq = Tp x k % 
+
+Tq : Tiền mua công suất phản kháng ( chưa có thuế giá trị gia tăng ) ; 
+
+Tp : Tiền mua điện năng tác dụng ( chưa có thuế giá trị gia tăng ) ; 
+
+k : Hệ số bù đắp chi phí do bên mua điện sử dụng quá lượng công suất phản kháng quy định ( % ) . 
+
+Hệ số k được xác định theo bảng sau : 
+
+Hệ số công suất 
+
+Cosφ 
+
+k ( % ) 
+
+Từ 0,9 trở lên 
+
+0 
+
+,74 
+
+21,62 
+
+,89 
+
+1,12 
+
+,73 
+
+23,29 
+
+,88 
+
+2,27 
+
+,72 
+
+25 
+
+,87 
+
+3,45 
+
+,71 
+
+26,76 
+
+,86 
+
+4,65 
+
+,7 
+
+28,57 
+
+,85 
+
+5,88 
+
+,69 
+
+30,43 
+
+,84 
+
+7,14 
+
+,68 
+
+32,35 
+
+,83 
+
+8,43 
+
+,67 
+
+34,33 
+
+,82 
+
+9,76 
+
+,66 
+
+36,36 
+
+,81 
+
+11,11 
+
+,65 
+
+38,46 
+
+,8 
+
+12,5 
+
+,64 
+
+40,63 
+
+9 
+
+13,92 
+
+,63 
+
+42,86 
+
+8 
+
+15,38 
+
+,62 
+
+45,16 
+
+7 
+
+16,88 
+
+,61 
+
+47,54 
+
+6 
+
+18,42 
+
+,6 
+
+50 
+
+5 
+
+20 
+
+Dưới 0,6 
+
+52,54 
+
+6 . Bên mua điện phải thanh toán tiền mua công suất phản kháng cùng kỳ với tiền mua điện năng tác dụng .  Hóa đơn mua công suất phản kháng thực hiện theo quy định của Bộ Tài chính .  Việc xử lý nợ tiền mua công suất phản kháng được thực hiện như xử lý nợ tiền mua điện năng tác dụng . 
+
+7 . Trường hợp bên bán điện không đảm bảo chất lượng điện theo quy định tại <NĐ rel="DaC"> Nghị định số 137/2013/NĐ-CP ngày 21 tháng 10 năm 2013 </NĐ> của Chính phủ quy định chi tiết thi hành một số điều của <L rel="none"> Luật Điện lực </L> và <L rel="none"> Luật sửa đổi , bổ sung một số điều của <L rel="none"> Luật Điện lực </L> </L> thì bên mua điện không phải mua công suất phản kháng khi hệ số công suất cosφ < 0,9 .
+8 . Trường hợp bên mua điện có khả năng phát công suất phản kháng lên hệ thống điện và bên bán điện có nhu cầu mua công suất phản kháng , hai bên có thể thỏa thuận việc mua bán công suất phản kháng thông qua hợp đồng .  Trường hợp hai bên không thỏa thuận được thì kiến nghị Bộ Công Thương xem xét quyết định . 
+
+Điều 4 .  Hiệu lực thi hành 
+
+1 . Thông tư này có hiệu lực thi hành kể từ ngày 10 tháng 12 năm 2014 ; <TT rel="HHL"> Thông tư số 07/2006/TT-BCN ngày 27 tháng 10 năm 2006 </TT> của Bộ Công nghiệp hướng dẫn mua bán công suất phản kháng hết hiệu lực thi hành kể từ ngày Thông tư này có hiệu lực .
+2 . Trong quá trình thực hiện nếu có vướng mắc , yêu cầu các đơn vị có liên quan phản ánh trực tiếp về Cục Điều tiết điện lực để xem xét , giải quyết theo thẩm quyền hoặc báo cáo Bộ Công Thương để giải quyết ./. 

@@ -1,0 +1,305 @@
+@import url("App.css");
+
+/* General layout styles */
+.layout {
+    display: block;
+    min-height: 100vh;
+}
+
+
+/* Sidebar links */
+.sidebar a {
+    font-family: var(--font-sidemenu);
+    font-weight: 500;
+    font-size: 1.2em;
+    color:#fff;
+    padding: .4em 0;
+}
+  
+  /* Sidebar styles */
+  .sidebar {
+    position: fixed;
+    background-color: rgba(45, 51, 67, 0.9);
+    width: 280px;
+    min-width: 280px;
+    padding: 20px 40px;
+    color: #fff;
+    min-height: 100%;
+    transition: transform 0.5s ease-out;
+    z-index: 1000;
+    min-height: 100vh;
+  }
+  
+  /* For mobile: start the sidebar offscreen */
+  @media (max-width: 768px) {
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      transform: translateX(-280px);
+      z-index: 1000;
+    }
+  }
+  
+  /* When open on mobile, override the transform via anime.js */
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  
+  /* Navigation header styles */
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-header h2 {
+    margin-bottom: 0;
+    margin-top: 25px;
+  }
+  
+  .offcanvas-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  /* Navigation list styles */
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+  }
+  
+  .nav-list li {
+    margin-bottom: 20px;
+  }
+  
+  .nav-list a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .nav-list a.active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  /* Content styles */
+  .content {
+    display: block;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Desktop: always show sidebar and hide offcanvas toggle button */
+  @media (min-width: 769px) {
+    .offcanvas-toggle {
+      display: none;
+    }
+  }
+
+.japanese-text, .ruby-text, .chinese-text {
+    font-family: 'Zen Old Mincho';
+}
+
+.floating-toggle-offcanvas {
+    position: fixed;
+    top: 24px;
+    left: 10px;
+    z-index: 1100;
+    background-color: #2d3343;
+    color: #fff;
+    border: none;
+    border-radius: 50%;  /* rounded button */
+    width: 50px;         /* adjust as needed */
+    height: 50px;        /* adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    outline: none;
+    transition:all 0.5s;
+    cursor: pointer;
+}
+
+/* Keyframe for fade-in and move forward (show) */
+@keyframes slideForwards {
+    from {
+      opacity: 0.9;
+      transform: translateX(280px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Keyframe for fade-out and move backward (hide) */
+  @keyframes slideBackwards {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0.9;
+      transform: translateX(280px);
+    }
+  }
+  
+  /* When the button is visible, it should be clickable */
+  .show-float-button {
+    animation: slideForwards 1.2s cubic-bezier(0.16, 1, 0.3, 1)forwards;
+    pointer-events: auto;
+  }
+  
+  /* When the button is hidden, disable pointer events */
+  .hide-float-button {
+    animation: slideBackwards 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    pointer-events: auto;
+  }
+
+  .floating-toggle-offcanvas div {
+    position:absolute;
+    top:30%;
+    left:20%;
+    height:2px;
+    width:60%;
+    background-color:#999;
+    z-index:1;
+    transform-origin:center;
+    transition:all .5s
+  }
+  .floating-toggle-offcanvas:hover {
+    transform:scale(1.1)
+  }
+
+  .floating-toggle-offcanvas div:nth-child(2) {
+    top:48%
+  }
+  .floating-toggle-offcanvas div:nth-child(3) {
+    top:68%
+  }
+
+  .floating-toggle-offcanvas.menu-open div:nth-child(1) {
+    top:50%;
+    transform:rotate(-45deg)
+  }
+  .floating-toggle-offcanvas.menu-open div:nth-child(2) {
+    opacity:0
+  }
+  .floating-toggle-offcanvas.menu-open div:nth-child(3) {
+    top:50%;
+    transform:rotate(45deg)
+  }
+  
+  .outlet {
+    position: absolute;
+    top: 1.5%;
+    left: 4%;
+    border-radius: 30px;
+    border-color: #d0d1d1;
+    background-color: #bdbaab;
+    height: 97%;
+    width: 95%;
+    z-index: 200;
+    opacity: 0.95;
+  }
+
+  .dong-son-drum {
+    top: 50%;
+    left: 50%;
+    width: 70vw;
+    height: 70vw;
+    transform: translate(-50%, -50%);
+    pointer-events: none;   /* not clickable */
+    position: absolute;
+    color: #b9b498; /* your desired fill color */
+    opacity: 0.55;
+    /* Continuous rotation */
+    animation: rotateImage 120s linear infinite;
+    z-index: 100;
+  }
+  
+  @keyframes rotateImage {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+
+  input[type="file"] {
+    font-size: 1em;
+    font-family: var(--font-primary);
+  }
+  
+  input[type="file"]::file-selector-button {
+    font-family: var(--font-primary);
+    background-color: #32a852;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    cursor: pointer;
+    font-size: 1em
+  }
+  
+/* Parent container */
+.chat-input-row {
+  display: flex;
+  flex-direction: row; /* Default: row on desktop */
+  width: 100%;
+  gap: 10px; /* Optional spacing between elements */
+}
+
+.upload-input-row {
+  display: flex;
+  flex-direction: row; /* Default: row on desktop */
+  width: 100%;
+  gap: 12px;
+}
+
+.chatbot-prompt-input {
+  font-family: var(--font-primary);
+  font-size: 1em;
+}
+
+/* (80% on desktop) */
+.row-8 {
+  flex: 8; /* 80% of available space */
+}
+
+/* (70% on desktop) */
+.row-7 {
+  flex: 7;
+}
+
+/* (30% on desktop) */
+.row-3 {
+  flex: 3;
+}
+
+/* (20% on desktop) */
+.row-2 {
+  flex: 2; /* 20% of available space */
+}
+
+/* Responsive design for tablets & mobile */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column; /* Stack elements vertically */
+  }
+
+  .row-8, .row-2, .row-7, .row-3 {
+    flex: none; /* Remove flex distribution */
+    width: 100%; /* Make both elements full width */
+  }
+}

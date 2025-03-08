@@ -1,0 +1,62 @@
+  @font-face {
+    font-family: 'Cormorant Infant';
+    src: url('./../fonts/CormorantInfant-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Cormorant Infant';
+    src: url('./../fonts/CormorantInfant-LightItalic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Zen Old Mincho';
+    src: url('./../fonts/ZenOldMincho-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Zen Old Mincho';
+    src: url('./../fonts/ZenOldMincho-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Zen Old Mincho';
+    src: url('./../fonts/ZenOldMincho-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Zen Old Mincho';
+    src: url('./../fonts/ZenOldMincho-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+:root {
+    --font-sidemenu: 'Cormorant Infant', 'Zen Old Mincho', 'Times New Roman', serif;
+    --font-primary: "Segoe UI", "Selawik", "Roboto", "Noto Sans", Arial, "Helvetica Neue", sans-serif,
+    "Noto Sans CJK SC", "Noto Sans CJK TC", "Noto Sans JP", "Noto Sans KR", /* CJK */
+    "Noto Sans Devanagari", "Nirmala UI", /* Devanagari */
+    "Noto Sans Arabic", "Tajawal", "Amiri", /* Arabic */
+    "Noto Sans Hebrew", "Noto Sans Thai", "Noto Sans Armenian", "Noto Sans Georgian";
+    font-family: var(--font-primary);
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 1.2em;
+    min-height: 100vh;
+    
+}

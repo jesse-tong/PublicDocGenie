@@ -1,0 +1,13 @@
+langchain[openai,community,chroma,kuzu,experimental]
+chromadb
+rank-bm25
+opencv-python
+openai
+pytesseract
+fastapi[standard]
+uvicorn[standard]
+sentence-transformers
+pandas
+unstructured
+docx2txt
+pypdf
