@@ -1,7 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import anime from 'animejs';
+import axios from 'axios';
 import FileUpload from './../components/FileUpload';
 import Chatbot from './../components/Chatbot';
+
+const BASE_URL = 'http://localhost:8000'; // or from env/config
 
 function QA() {
   // State for files and chat messages
@@ -63,10 +66,16 @@ function QA() {
     // Add user message
     setMessages(prev => [...prev, { type: 'user', text: prompt }]);
 
-    // Simulate a bot response after a delay
-    setTimeout(() => {
-      setMessages(prev => [...prev, { type: 'bot', text: 'This is a bot reply to: ' + prompt }]);
-    }, 500);
+    axios.post(BASE_URL + '/chatbot/ask', { question: prompt })
+      .then(res => {
+        // Add bot response
+        setMessages(prev => [...prev, { type: 'bot', text: res.data.answer + '\nReferences: ' + res.data.titles.map(title => `- ${title}`).join("\n") }]);
+      })
+      .catch(err => {
+        console.error(err);
+        setMessages(prev => [...prev, { type: 'bot', text: 'Sorry, I am unable to process your request at the moment.' }]);
+      });
+    
   };
 
   // Main container styling

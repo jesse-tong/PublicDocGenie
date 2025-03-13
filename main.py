@@ -10,7 +10,7 @@ from handlers_autofill.document_process import KuzuSession
 async def load_vector_db(app: FastAPI):
     print("Loading Chroma database...")
     chroma_db = load_chroma_db("./vector_db")
-    kuzu_session = KuzuSession("user")
+    kuzu_session = KuzuSession("default_user")
     
     app.state.chroma_db = chroma_db
     app.state.kuzu_session = kuzu_session
