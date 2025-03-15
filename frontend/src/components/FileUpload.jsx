@@ -29,7 +29,7 @@ const previewItemStyle = {
   borderRadius: '8px'
 };
 
-function FileUpload({ onFilesSelected, onDeleteFiles, pendingFiles, uploadingOpen, ref }) {
+function FileUpload({ onFilesSelected, onDeleteFiles, pendingFiles, uploadingOpen, ref, showUploadButton=true }) {
 
   // Handler when files are selected
   const handleInputChange = (event) => {
@@ -72,9 +72,11 @@ function FileUpload({ onFilesSelected, onDeleteFiles, pendingFiles, uploadingOpe
           <input type="file" multiple onChange={handleInputChange} className='chat-button'/>
           <br />
           {/* The "Upload Files" button could trigger an upload process if needed */}
+          { showUploadButton &&
           <button style={buttonStyle} onClick={() => onFilesSelected([])}>
             Upload Files
           </button>
+    }
           <button style={buttonStyle} onClick={onDeleteFiles}>
             Delete Pending Files
           </button>

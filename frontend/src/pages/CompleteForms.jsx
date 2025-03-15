@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import FileUpload from '../components/FileUpload';  // Your FileUpload component
+import TextList from '../components/TextList';
 
 /**
  * Utility function to parse lines like:
@@ -111,6 +112,12 @@ const CompleteForms = () => {
 
   // If all required info is matched
   const [isAllMatched, setIsAllMatched] = useState(false);
+
+  // **New**: Toggle to show/hide "Current Required Docs & Infos" panel in step 3
+  const [showDocsInfosPanel, setShowDocsInfosPanel] = useState(false);
+
+  // Waiting for response from the server
+  const [loading, setLoading] = useState(false);
 
   /**
    * Called after the user selects their initial "form files" and clicks "upload."
@@ -226,7 +233,7 @@ const CompleteForms = () => {
       // Figure out which required infos remain unmatched
       // For simplicity, let's say if the matched info's name matches the required info, it's fulfilled
       const matchedInfosNames = matched.map((m) => m.info);
-      const stillNeeded = onlyRequiredInfos.filter(
+      const stillNeeded = remainingInfos.filter(
         (info) => !matchedInfosNames.includes(info)
       );
       setRemainingInfos(stillNeeded);
@@ -300,12 +307,12 @@ const CompleteForms = () => {
   // Render UI based on current step
   return (
     <div style={containerStyle} className='outlet'>
-      <h1>CompleteForm Flow</h1>
+      <h2>Hoàn thiện mẫu đơn dịch vụ công</h2>
 
       {currentStep === 1 && (
         <div>
           <h2>Step 1: Upload your initial form files</h2>
-          <FileUpload pendingFiles={formFiles} onFilesSelected={setFormFiles} uploadingOpen={true}/>
+          <FileUpload pendingFiles={formFiles} onFilesSelected={setFormFiles} uploadingOpen={true} showUploadButton={false}/>
           <button onClick={handleInitialFormSubmit}>Upload &amp; Parse</button>
         </div>
       )}
@@ -314,14 +321,18 @@ const CompleteForms = () => {
         <div>
           <h2>Required Documents and Infos (from return_docs = true)</h2>
           <p>
-            <strong>Documents:</strong> {requiredDocs.join(', ') || 'None'}
+            <strong>Documents:</strong>
           </p>
+          { requiredDocs.length > 0 ? (<TextList data={requiredDocs} maxHeight={200} />) : (<p>No required documents found.</p>) }
           <p>
-            <strong>Infos:</strong> {requiredInfos.join(', ') || 'None'}
+            <strong>Infos:</strong> 
           </p>
+          { requiredInfos.length > 0 ? (<TextList data={requiredInfos} maxHeight={200} />) : (<p>No required information found.</p>) }
           <hr />
           <h3>Required Infos Only (from return_docs = false)</h3>
-          <p>{onlyRequiredInfos.join(', ') || 'None'}</p>
+          <div>
+          { onlyRequiredInfos.length > 0 ? (<TextList data={onlyRequiredInfos} maxHeight={250} />) : (<p>No required information found.</p>) }
+          </div>
           <button onClick={() => setCurrentStep(3)}>
             Proceed to Upload Required Docs
           </button>
@@ -336,7 +347,7 @@ const CompleteForms = () => {
             contain the needed info, please upload them here. You can also
             provide extra text info in the text area below.
           </p>
-          <FileUpload pendingFiles={requiredDocsFiles} onFilesSelected={setRequiredDocsFiles} uploadingOpen={true}/>
+          <FileUpload pendingFiles={requiredDocsFiles} onFilesSelected={setRequiredDocsFiles} uploadingOpen={true} showUploadButton={false}/>
           <br />
           <label>
             Additional Info (text):
@@ -356,6 +367,45 @@ const CompleteForms = () => {
               onChange={() => setCheckValidity(!checkValidity)}
             />
           </label>
+          {/* 
+            NEW: A button to toggle the panel showing 
+            the current required docs & infos 
+          */}
+          <button onClick={() => setShowDocsInfosPanel(!showDocsInfosPanel)}>
+            {showDocsInfosPanel
+              ? 'Hide Current Required Docs & Infos'
+              : 'Show Current Required Docs & Infos'}
+          </button>
+
+          {showDocsInfosPanel && (
+            <div
+              style={{
+                border: '1px solid #ccc',
+                padding: '1rem',
+                margin: '1rem 0'
+              }}
+            >
+              <h3>Currently Required Documents</h3>
+              {requiredDocs.length > 0 ? (
+                <TextList data={requiredDocs} maxHeight={200} />
+              ) : (
+                <p>No required documents found.</p>
+              )}
+              <h3>Currently Required Infos</h3>
+              {onlyRequiredInfos.length > 0 ? (
+                <TextList data={onlyRequiredInfos} maxHeight={200} />
+              ) : (
+                <p>No required infos found.</p>
+              )}
+              <h3>Remaining Required Infos</h3>
+              {remainingInfos.length > 0 ? (
+                <TextList data={remainingInfos} maxHeight={200} />
+              ) : (
+                <p>All required infos are matched!</p>
+              )}
+            </div>
+          )}
+
           <br />
           <button onClick={handleRequiredDocsSubmit}>
             Upload &amp; Match Info
