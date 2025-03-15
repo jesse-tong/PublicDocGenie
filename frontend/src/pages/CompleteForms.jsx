@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import FileUpload from '../components/FileUpload';  // Your FileUpload component
 import TextList from '../components/TextList';
+import Markdown from 'react-markdown';
 
 /**
  * Utility function to parse lines like:
@@ -117,7 +118,7 @@ const CompleteForms = () => {
   const [showDocsInfosPanel, setShowDocsInfosPanel] = useState(false);
 
   // Waiting for response from the server
-  const [loading, setLoading] = useState(false);
+  const loading = useRef(false);
 
   /**
    * Called after the user selects their initial "form files" and clicks "upload."
@@ -130,6 +131,12 @@ const CompleteForms = () => {
       return;
     }
 
+    if (loading.current === true){
+      alert('Hãy chờ cho đến khi có phản hồi bên phía server.');
+      return;
+    }
+
+    loading.current = true;
     try {
       // 1) return_docs = true
       const formDataDocs = new FormData();
@@ -173,6 +180,7 @@ const CompleteForms = () => {
       console.error(err);
       alert('Error uploading form files or parsing server response.');
     }
+    loading.current = false;
   };
 
   /**
@@ -188,6 +196,12 @@ const CompleteForms = () => {
       return;
     }
 
+    if (loading.current === true){
+      alert('Hãy chờ cho đến khi có phản hồi bên phía server.');
+      return;
+    }
+
+    loading.current = true;
     try {
       const formData = new FormData();
       // Append the required docs files
@@ -249,6 +263,7 @@ const CompleteForms = () => {
       console.error(err);
       alert('Error matching info from uploaded documents.');
     }
+    loading.current = false;
   };
 
   /**
@@ -319,7 +334,7 @@ const CompleteForms = () => {
 
       {currentStep === 2 && (
         <div>
-          <h2>Required Documents and Infos (from return_docs = true)</h2>
+          <h2>Required Documents and Infos</h2>
           <p>
             <strong>Documents:</strong>
           </p>
@@ -333,7 +348,7 @@ const CompleteForms = () => {
           <div>
           { onlyRequiredInfos.length > 0 ? (<TextList data={onlyRequiredInfos} maxHeight={250} />) : (<p>No required information found.</p>) }
           </div>
-          <button onClick={() => setCurrentStep(3)}>
+          <button onClick={() => setCurrentStep(3)} style={{marginTop: '1rem'}}>
             Proceed to Upload Required Docs
           </button>
         </div>
@@ -417,27 +432,21 @@ const CompleteForms = () => {
         <div>
           <h2>Matched Results</h2>
           {matchResults.length === 0 && <p>No matched information yet.</p>}
-          {matchResults.map((m, idx) => (
+          <TextList data={matchResults.map((m, idx) => (
             <div
               key={idx}
-              style={{ border: '1px solid #ccc', padding: '0.5rem', margin: '0.5rem 0' }}
+              style={{ border: '1px solid #ccc', padding: '0.1rem 0.3rem', margin: '0.2rem 0' }}
             >
-              <p>
-                <strong>Info:</strong> {m.info}
-              </p>
-              <p>
-                <strong>Value:</strong> {m.value}
-              </p>
-              <p>
-                <strong>Doc:</strong> {m.doc}
-              </p>
+              <p><strong>Info:</strong> {m.info}</p>
+              <p><strong>Value:</strong> {m.value}</p>
+              <p><strong>Doc:</strong> {m.doc}</p>
             </div>
-          ))}
+          ))} maxHeight={400} />
 
           {checkValidity && checkingValidValueText && (
-            <div style={{ marginTop: '1rem', color: 'blue' }}>
+            <div style={{ marginTop: '1rem' }}>
               <h3>Validity Check:</h3>
-              <p>{checkingValidValueText}</p>
+              <Markdown>{checkingValidValueText}</Markdown>
             </div>
           )}
 
