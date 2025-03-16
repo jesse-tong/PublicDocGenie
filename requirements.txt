@@ -3,6 +3,7 @@ chromadb
 rank-bm25
 opencv-python
 openai
+easyocr
 pytesseract
 fastapi[standard]
 uvicorn[standard]
