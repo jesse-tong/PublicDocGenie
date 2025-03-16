@@ -15,7 +15,6 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        {/* The App component works as a layout component with an Outlet */}
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
           <Route path="qa" element={<QA />} />

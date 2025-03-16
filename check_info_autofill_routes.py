@@ -133,7 +133,7 @@ async def autofill_form(form_files: List[UploadFile],
 @router.post('/autofill/match_with_parsed_info', response_model=AutofillResponse)
 async def match_documents_with_parsed_required_info(app_request: Request,
                                                     required_info: str = Form(...), 
-                                                    required_docs_files: List[UploadFile] = File(),
+                                                    required_docs_files: List[UploadFile] | None = Form([]),
                                                     additional_info: str | None = Form(None),
                                                     check_validity: bool = Form(True) ):
     images, docs = await get_images_and_docs_from_form_files(required_docs_files)

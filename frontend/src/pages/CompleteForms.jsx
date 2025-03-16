@@ -4,6 +4,34 @@ import FileUpload from '../components/FileUpload';  // Your FileUpload component
 import TextList from '../components/TextList';
 import Markdown from 'react-markdown';
 
+function levenshteinDistance(a, b) {
+  if (a.length === 0) return b.length;
+  if (b.length === 0) return a.length;
+
+  const matrix = new Array(b.length + 1).fill(0).map(() => new Array(a.length + 1).fill(0));
+
+  for (let i = 0; i <= b.length; i++) {
+    matrix[i][0] = i;
+  }
+
+  for (let j = 0; j <= a.length; j++) {
+    matrix[0][j] = j;
+  }
+
+  for (let i = 1; i <= b.length; i++) {
+    for (let j = 1; j <= a.length; j++) {
+      if (b.charAt(i - 1) === a.charAt(j - 1)) {
+        matrix[i][j] = matrix[i - 1][j - 1];
+      } else {
+        matrix[i][j] = 1 + Math.min(matrix[i - 1][j], matrix[i][j - 1], matrix[i - 1][j - 1]);
+      }
+    }
+  }
+
+  return matrix[b.length][a.length];
+}
+
+
 /**
  * Utility function to parse lines like:
  *   <Doc>CCCD</Doc>
@@ -127,7 +155,7 @@ const CompleteForms = () => {
    */
   const handleInitialFormSubmit = async () => {
     if (formFiles.length === 0) {
-      alert('Please upload at least one form file.');
+      alert('Hãy tải lên một tập tin mẫu đơn (ảnh hoặc file pdf/docx)');
       return;
     }
 
@@ -191,7 +219,7 @@ const CompleteForms = () => {
   const handleRequiredDocsSubmit = async () => {
     if (requiredDocsFiles.length === 0 && !additionalInfo) {
       alert(
-        'Please upload at least one file containing the required info or provide additional information.'
+        'Hãy tải lên ít nhất một tập tin ảnh hoặc văn bản (pdf/docx) chứa thông tin cần hoặc nhập thông tin cần cho mẫu đơn.'
       );
       return;
     }
@@ -247,9 +275,14 @@ const CompleteForms = () => {
       // Figure out which required infos remain unmatched
       // For simplicity, let's say if the matched info's name matches the required info, it's fulfilled
       const matchedInfosNames = matched.map((m) => m.info);
-      const stillNeeded = remainingInfos.filter(
-        (info) => !matchedInfosNames.includes(info)
-      );
+
+      // Use Levenshtein distance to find close matches to filter the matched infos from the remaining infos
+      const stillNeeded = remainingInfos.filter((info) => {
+        return !matchedInfosNames.some((matchedName) => {
+          const distance = levenshteinDistance(info, matchedName);
+          return distance <= 5;
+        });
+      });
       setRemainingInfos(stillNeeded);
 
       // Check if all required infos are matched
@@ -326,15 +359,15 @@ const CompleteForms = () => {
 
       {currentStep === 1 && (
         <div>
-          <h2>Step 1: Upload your initial form files</h2>
+          <h2>Bước 1: Tải lên các file cho mẫu đơn</h2>
           <FileUpload pendingFiles={formFiles} onFilesSelected={setFormFiles} uploadingOpen={true} showUploadButton={false}/>
-          <button onClick={handleInitialFormSubmit}>Upload &amp; Parse</button>
+          <button onClick={handleInitialFormSubmit}>Tải lên &amp; Xử lý</button>
         </div>
       )}
 
       {currentStep === 2 && (
         <div>
-          <h2>Required Documents and Infos</h2>
+          <h2>Thông tin và các văn bản/tài liệu cần</h2>
           <p>
             <strong>Documents:</strong>
           </p>
@@ -476,8 +509,7 @@ const CompleteForms = () => {
           {!isAllMatched && (
             <div style={{ margin: '1rem 0' }}>
               <p>
-                Some info is still missing. Upload more documents or add more
-                text info.
+                Một số thông tin còn thiếu. Hãy tải lên các tài liệu khác hoặc cung cấp thông tin thêm.
               </p>
               <button onClick={() => setCurrentStep(3)}>Go Back</button>
             </div>
@@ -491,14 +523,14 @@ const CompleteForms = () => {
                 the form.
               </p>
               <button onClick={handleCopyToClipboard}>
-                Copy All Info to Clipboard
+                Sao chép vào clipboard
               </button>
               <button onClick={handleDownloadTextFile}>
-                Download as Text File
+                Tải xuống tập tin văn bản (.txt)
               </button>
               <br />
               <br />
-              <button onClick={handleNewForm}>OK (New Form)</button>
+              <button onClick={handleNewForm}>OK (Mẫu đơn mới)</button>
             </div>
           )}
         </div>

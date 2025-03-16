@@ -11,7 +11,7 @@
 .sidebar a {
     font-family: var(--font-sidemenu);
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 1em;
     color:#fff;
     padding: .4em 0;
 }
@@ -235,7 +235,7 @@
   }
 
   input[type="file"] {
-    font-size: 1em;
+    font-size: 16px;
     font-family: var(--font-primary);
   }
   
@@ -248,7 +248,7 @@
     padding: 10px 20px;
     margin: 10px 5px;
     cursor: pointer;
-    font-size: 1em
+    font-size: 16px;
   }
   
 /* Parent container */
@@ -268,7 +268,7 @@
 
 .chatbot-prompt-input {
   font-family: var(--font-primary);
-  font-size: 1em;
+  font-size: 16px;
 }
 
 /* (80% on desktop) */
